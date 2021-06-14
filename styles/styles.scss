@@ -90,6 +90,20 @@ h1 {
             height: 100%;
         }
     }
+
+    #review {
+        text-align: center;
+        background-color: $color4;
+        color: $color1;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 5rem auto 0;
+
+        @media only screen and (min-width: 1200px) {
+            width: max-content;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 #skills {
