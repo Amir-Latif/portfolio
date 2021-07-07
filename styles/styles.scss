@@ -12,6 +12,10 @@ $color4: #f7f8f3;
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
+// html, body {
+//     overflow: auto;
+// }
+
 body {
     color: $color1 !important;
     box-sizing: border-box;
@@ -36,19 +40,22 @@ h1 {
 // Specific
 
 #about {
-    
+
     margin: auto;
-    display: flex;
-    align-items: flex-end;
     
     @media only screen and (min-width: 1200px) {
         align-items: baseline;
         width: max-content;
+        display: flex;
     }
     
     img {
-        width: 15rem;
-        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+
+        @media only screen and (min-width: 1200px) {
+            border-radius: 0.5rem;
+        }
     }
     
     div {        
@@ -60,6 +67,10 @@ h1 {
             font-weight: 1000;
             font-family: 'Parisienne', cursive;
         }
+    }
+     
+    p {
+        margin: 1rem;
     }
 }
 
@@ -111,7 +122,7 @@ h1 {
         margin-top: 3rem;
         display: flex;
         align-items: center;
-        overflow: auto;
+        overflow: scroll;
 
         img {
             margin: 0 1rem;
@@ -125,6 +136,7 @@ h1 {
 }
 
 footer {
+    overflow: scroll;
     background-color: $color1;
     color: $color4;
     margin: 5rem 0 0;

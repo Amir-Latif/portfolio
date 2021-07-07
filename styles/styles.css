@@ -21,18 +21,22 @@ h1 {
 
 #about {
   margin: auto;
-  display: flex;
-  align-items: flex-end;
 }
 @media only screen and (min-width: 1200px) {
   #about {
     align-items: baseline;
     width: max-content;
+    display: flex;
   }
 }
 #about img {
-  width: 15rem;
-  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 1200px) {
+  #about img {
+    border-radius: 0.5rem;
+  }
 }
 #about div {
   text-align: center;
@@ -42,6 +46,9 @@ h1 {
   font-style: italic;
   font-weight: 1000;
   font-family: "Parisienne", cursive;
+}
+#about p {
+  margin: 1rem;
 }
 
 #works {
@@ -89,7 +96,7 @@ h1 {
   margin-top: 3rem;
   display: flex;
   align-items: center;
-  overflow: auto;
+  overflow: scroll;
 }
 #skills div img {
   margin: 0 1rem;
@@ -102,6 +109,7 @@ h1 {
 }
 
 footer {
+  overflow: scroll;
   background-color: #002c3e;
   color: #f7f8f3;
   margin: 5rem 0 0;
