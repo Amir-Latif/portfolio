@@ -12,10 +12,6 @@ $color4: #f7f8f3;
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
-// html, body {
-//     overflow: auto;
-// }
-
 body {
     color: $color1 !important;
     box-sizing: border-box;
@@ -80,7 +76,19 @@ h1 {
     margin: 2rem 0;
     padding: 2rem;
 
-    #gallery {
+    hr {
+        border: solid 1rem #2D4649;
+    }
+
+    h2 {
+        background-color: #f7f8f3;
+        color: #f7444e;
+        width: max-content;
+        padding: 0.5rem;
+        border-radius: 2rem;
+    }
+
+    .gallery {
         padding: 1rem;
 
         a {
@@ -98,7 +106,11 @@ h1 {
             display: block;
             border-radius: 1rem;
             width: 100%;
-            height: 100%;
+            height: 75%;
+        }
+
+        figcaption {
+            text-align: center;
         }
     }
 

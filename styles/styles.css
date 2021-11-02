@@ -57,25 +57,38 @@ h1 {
   margin: 2rem 0;
   padding: 2rem;
 }
-#works #gallery {
+#works hr {
+  border: solid 1rem #2D4649;
+}
+#works h2 {
+  background-color: #f7f8f3;
+  color: #f7444e;
+  width: max-content;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+#works .gallery {
   padding: 1rem;
 }
-#works #gallery a {
+#works .gallery a {
   margin: 1rem;
 }
 @media only screen and (min-width: 1200px) {
-  #works #gallery {
+  #works .gallery {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 25rem;
     gap: 2rem;
   }
 }
-#works #gallery img {
+#works .gallery img {
   display: block;
   border-radius: 1rem;
   width: 100%;
-  height: 100%;
+  height: 75%;
+}
+#works .gallery figcaption {
+  text-align: center;
 }
 #works #review {
   text-align: center;
