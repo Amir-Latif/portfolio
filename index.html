@@ -19,82 +19,84 @@
     <noscript>
         You need to enable JavaScript to run this app.
     </noscript>
-    <div class="parent container">
+    <div class="container">
 
-        <section id="about" class="container">
-            <div>
+        <section id="about" class="container m-auto d-xl-flex align-items-xl-baseline">
+            <div class="text-center">
                 <img srcset="images/amir-latif-desktop.png 1339w, images/amir-latif-mobile.png 284w"
-                    sizes="(min-width: 1200px) 70vw, 50vw" src="images/amir-latif-mobile.png" alt="Amir Latif Pic">
+                    sizes="(min-width: 1200px) 70vw, 50vw" src="images/amir-latif-mobile.png" alt="Amir Latif Pic"
+                    class="mb-3">
             </div>
-            <div>
-                <h1>Amir Latif</h1>
+            <div class="text-center">
+                <h1 class="fst-italic">Amir Latif</h1>
                 <h2>Junior Full-Stack Web Developer</h2>
-                <p> My passion is high to help others develop their skills, lives and achieve their goals.<br>
+                <p class="m-1"> My passion is high to help others develop their skills, lives and achieve their
+                    goals.<br>
                     I love programming, creative designs, sports and languages </p>
             </div>
         </section>
 
-        <section id="works">
+        <section id="works" class="p-4">
             <h1>
                 My Works
             </h1>
             <hr>
 
-            <h2 id="scripts">Scripts</h2>
+            <h2 id="scripts" class="rounded-pill p-3">Scripts</h2>
 
-            <div class="gallery">
-                <div id="amfut">
+            <div class="gallery p-3 row align-items-center">
+                <div id="amfut" class="col">
                     <a href="https://www.mediafire.com/file/ci4t260wvgy1e9w/am-form-to-custom-table.zip/file"
                         target="_blank">
                         <img src="./images/WordPress-logo.png" alt="WordPress Plugin">
                     </a>
-                    <figcaption class="mb-3">WordPress Plugin: Gets user input to custom table</figcaption>
+                    <figcaption class="my-3 text-center">WordPress Plugin: Gets user input to custom table</figcaption>
                 </div>
 
-                <div id="amrp">
+                <div id="amrp" class="col">
                     <a href="https://www.mediafire.com/file/6m3pipnvu5aua3h/am-rate-posts.zip/file" target="_blank">
                         <img src="./images/WordPress-logo.png" alt="WordPress Plugin">
                     </a>
-                    <figcaption class="mb-3">WordPress Plugin: Adds rating to posts</figcaption>
+                    <figcaption class="myb-3 text-center">WordPress Plugin: Adds rating to posts</figcaption>
                 </div>
             </div>
 
             <hr>
 
-            <h2 id="themes">Themes</h2>
-            <div class="gallery">
-                <div>
+            <h2 id="themes" class="rounded-pill p-3">Themes</h2>
+            <div class="gallery p-3 row align-items-center">
+                <div class="col">
                     <img srcset="images/career-desktop.jpg 1339w, images/career-mobile.jpg 664w"
                         sizes="(min-width: 1200px) 100vw, 50vw" src="images/career-mobile.jpg" alt="Career Views Theme">
-                    <figcaption class="my-3">WordPress theme-color</figcaption>
+                    <figcaption class="my-3 text-center">WordPress theme-color</figcaption>
                 </div>
             </div>
 
             <hr>
 
-            <h2 id="full-stack">Full-Stack</h2>
+            <h2 id="full-stack" class="rounded-pill p-3">Full-Stack</h2>
 
-            <div class="gallery">
-                <div>
+            <div class="gallery p-3 row align-items-center">
+                <div class="col">
                     <a href="https://sharp-snyder-1d6d85.netlify.app/" target="_blank">
                         <img srcset="images/animated-desktop.png 1339w, images/animated-mobile.png 664w"
                             sizes="(min-width: 1200px) 100vw, 50vw" src="images/animated-mobile.png"
                             alt="animated work">
                     </a>
-                    <figcaption class="mb-3">Vanilla JS</figcaption>
+                    <figcaption class="my-3 text-center">Vanilla JS</figcaption>
                 </div>
 
-                <div>
+                <div class="col">
                     <a href="https://hotel--booking.herokuapp.com/" target="_blank">
                         <img srcset="images/hotel-desktop.JPG 1289w, images/hotel-mobile.JPG 607w"
                             sizes="(min-width: 1200px) 100vw, 50vw" src="images/hotel-mobile.JPG" alt="booking app">
                     </a>
-                    <figcaption class="mb-3">React-Redux / Dotnet Core</figcaption>
+                    <figcaption class="my-3 text-center">React-Redux / Dotnet Core</figcaption>
                 </div>
             </div>
 
-            <div id="review"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <div id="review" class="text-center rounded p-3"><svg stroke="currentColor" fill="currentColor"
+                    stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z">
                     </path>
@@ -105,8 +107,8 @@
         </section>
 
         <section id="skills">
-            <h1>Tools</h1>
-            <div>
+            <h1 class="mb-4">Tools</h1>
+            <div class="d-flex overflow-scroll">
                 <img src="images/html.svg" alt="HTML">
                 <img src="images/css.svg" alt="CSS">
                 <img src="images/sass.svg" alt="Sass">
@@ -123,11 +125,13 @@
             </div>
         </section>
 
-        <footer>
+        <footer class="overflow-scroll p-4 d-flex justify-content-center">
             <a href="https://www.linkedin.com/in/amirlatif92/" target="_blank" rel="noopener noreferrer"><img
                     src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.fiverr.com/amirlatif92" target="_blank" rel="noopener noreferrer"><img
+                    src="images/fiverr.svg" alt="Fiverr"></a>
             <a href="https://khamsat.com/user/amir_latif" target="_blank" rel="noopener noreferrer"><img
-                    src="images/Khamsat.png" alt=""></a>
+                    src="images/Khamsat.png" alt="khamsat"></a>
             <a href="https://mostaql.com/u/Amir_Latif/portfolio" target="_blank" rel="noopener noreferrer"><img
                     src="images/mustaql.png" alt="Mustaql"></a>
             <a href="https://github.com/Amir-Latif" target="_blank" rel="noopener noreferrer"><img
@@ -137,11 +141,6 @@
 
     </div>
 
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

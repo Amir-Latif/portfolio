@@ -23,30 +23,22 @@ h1 {
 }
 
 .container {
+    padding: 0 !important;
 
     @media only screen and (min-width: 1200px) {
         max-width: 100% !important;
     }
 }
 
-.parent {
-    padding: 0 !important;
-}
-
 // Specific
 
 #about {
-
-    margin: auto;
     
     @media only screen and (min-width: 1200px) {
-        align-items: baseline;
         width: max-content;
-        display: flex;
     }
     
     img {
-        margin-bottom: 1rem;
         border-radius: 50%;
 
         @media only screen and (min-width: 1200px) {
@@ -55,18 +47,11 @@ h1 {
     }
     
     div {        
-        text-align: center;
-
         h1 {
             color: $color2;
-            font-style: italic;
             font-weight: 1000;
             font-family: 'Parisienne', cursive;
         }
-    }
-     
-    p {
-        margin: 1rem;
     }
 }
 
@@ -74,7 +59,10 @@ h1 {
     background-color: $color3;
     color: $color4;
     margin: 2rem 0;
-    padding: 2rem;
+
+    .col {
+        min-width: 250px;
+    }
 
     hr {
         border: solid 1rem #2D4649;
@@ -84,23 +72,9 @@ h1 {
         background-color: #f7f8f3;
         color: #f7444e;
         width: max-content;
-        padding: 0.5rem;
-        border-radius: 2rem;
     }
 
     .gallery {
-        padding: 1rem;
-
-        a {
-            margin: 1rem;
-        }
-
-        @media only screen and (min-width: 1200px) {
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: 25rem;
-            gap: 2rem;
-        }
 
         img {
             display: block;
@@ -108,18 +82,11 @@ h1 {
             width: 100%;
             height: 75%;
         }
-
-        figcaption {
-            text-align: center;
-        }
     }
 
     #review {
-        text-align: center;
         background-color: $color4;
         color: $color1;
-        border-radius: 1rem;
-        padding: 1rem;
         margin: 5rem auto 0;
 
         @media only screen and (min-width: 1200px) {
@@ -131,11 +98,6 @@ h1 {
 
 #skills {
     div {
-        margin-top: 3rem;
-        display: flex;
-        align-items: center;
-        overflow: scroll;
-
         img {
             margin: 0 1rem;
             height: 5rem;
@@ -148,15 +110,9 @@ h1 {
 }
 
 footer {
-    overflow: scroll;
     background-color: $color1;
     color: $color4;
     margin: 5rem 0 0;
-    padding: 2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     img {
         height: 5rem;
