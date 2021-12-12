@@ -9,11 +9,11 @@ h1 {
   font-size: calc(2rem + 1.5vw) !important;
 }
 
-.container {
+main.container {
   padding: 0 !important;
 }
 @media only screen and (min-width: 1200px) {
-  .container {
+  main.container {
     max-width: 100% !important;
   }
 }
