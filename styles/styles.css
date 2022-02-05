@@ -37,54 +37,75 @@ main.container {
   font-family: "Parisienne", cursive;
 }
 
-#works {
+#projects {
   background-color: #78bcc4;
-  color: #f7f8f3;
+  color: #000000;
   margin: 2rem 0;
 }
-#works .col {
+#projects .col {
   min-width: 250px;
 }
-#works hr {
-  border: solid 1rem #2D4649;
-}
-#works h2 {
+#projects h2 {
   background-color: #f7f8f3;
   color: #f7444e;
   width: max-content;
 }
-#works .gallery img {
-  display: block;
-  border-radius: 1rem;
-  width: 100%;
-  height: 75%;
+#projects .gallery + hr {
+  border: solid 1rem #2d4649;
 }
-#works #review {
+#projects img {
+  height: 350px;
+}
+#projects #review {
   background-color: #f7f8f3;
   color: #002c3e;
   margin: 5rem auto 0;
 }
 @media only screen and (min-width: 1200px) {
-  #works #review {
+  #projects #review {
     width: max-content;
     font-size: 1.5rem;
   }
 }
-
-#skills div img {
-  margin: 0 1rem;
-  height: 5rem;
+#projects .card {
+  background-color: #cdf6f2;
+  border: none;
 }
-@media only screen and (min-width: 1200px) {
-  #skills div img {
-    height: 8rem;
-  }
+#projects .card hr {
+  height: 0;
+}
+
+#skills {
+  font-size: 1.2rem;
+  color: #000000;
+}
+#skills .col {
+  position: relative;
+  min-width: 350px;
+  padding-bottom: 1rem;
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-size: 90% 2px;
+  background-position: bottom;
+}
+#skills img {
+  margin: 0 1rem;
+  width: 3rem;
+  height: 3rem;
+  flex-basis: 10px;
+  margin: 0 1rem 0 0;
+}
+#skills .exp-years {
+  margin-left: auto;
 }
 
 footer {
   background-color: #002c3e;
   color: #f7f8f3;
   margin: 5rem 0 0;
+}
+footer .col {
+  max-width: 120px;
 }
 footer img {
   height: 5rem;

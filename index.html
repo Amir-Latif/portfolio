@@ -9,7 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="#002c3e" />
+    <meta name="theme- col my-3 my-md-0or" content="#002c3e" />
     <link rel="manifest" href="portfolio.webmanifest" />
     <link rel="shortcut icon" href="images/favicon.png" />
     <!-- Styles -->
@@ -37,81 +37,101 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <main class="container">
-      <section
-        id="about"
-        class="container m-auto d-xl-flex align-items-xl-baseline"
-      >
-        <div class="text-center">
-          <img
-            srcset="
-              images/amir-latif-desktop.png 1339w,
-              images/amir-latif-mobile.png   284w
-            "
-            sizes="(min-width: 1200px) 70vw, 50vw"
-            src="images/amir-latif-mobile.png"
-            alt="Amir Latif Pic"
-            class="mb-3"
-          />
-        </div>
-        <div class="text-center">
-          <h1 class="fst-italic">Amir Latif</h1>
-          <h2>Junior Full-Stack Web Developer</h2>
-          <p class="m-1">
-            My passion is high to help others develop their skills, lives and
-            achieve their goals.<br />
-            I love programming, creative designs, sports and languages
-          </p>
+      <section>
+        <div
+          id="about"
+          class="container m-auto d-xl-flex align-items-xl-baseline"
+        >
+          <div class="text-center">
+            <img
+              srcset="
+                images/amir-latif-desktop.png 1339w,
+                images/amir-latif-mobile.png   284w
+              "
+              sizes="(min-width: 1200px) 70vw, 50vw"
+              src="images/amir-latif-mobile.png"
+              alt="Amir Latif Pic"
+              class="mb-3"
+            />
+          </div>
+          <div class="text-center">
+            <h1 class="fst-italic">Amir Latif</h1>
+            <h2>Junior Full-Stack Web Developer</h2>
+            <p class="m-1">
+              My passion is high to help others develop their skills, lives and
+              achieve their goals.<br />
+              I love programming, creative designs, sports and languages
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="works" class="p-4">
-        <h1>My Works</h1>
+      <section id="projects" class="p-4">
+        <h1>Projects</h1>
         <hr />
 
         <h2 id="scripts" class="rounded-pill p-3">Scripts</h2>
 
-        <div class="gallery p-3 row">
-          <div id="amfut" class="col">
-            <a
-              href="https://www.mediafire.com/file/ci4t260wvgy1e9w/am-form-to-custom-table.zip/file"
-              target="_blank"
-            >
+        <div class="gallery p-3 row justify-content-center">
+          <div id="amfut" class="col my-3 my-md-0">
+            <div class="card">
               <img src="./images/WordPress-logo.png" alt="WordPress Plugin" />
-            </a>
-            <figcaption class="my-3 text-center">
-              WordPress Plugin: Gets user input to custom table
-            </figcaption>
+
+              <div class="card-body">
+                <h5 class="card-title">WordPress Plugin</h5>
+                <ul class="card-text">
+                  <li>
+                    It displays a form in the frontend wherever the user wants
+                    to use it.
+                  </li>
+                  <li>
+                    The data collected from the form is stores in a custom
+                    database tabel and displayed in the dashboard for the admin
+                  </li>
+                  <li>
+                    I developed it using
+                    <b
+                      >SCSS, Recat, React-Bootstrap, PHP, WordPress functions &
+                      SQL</b
+                    >
+                  </li>
+                </ul>
+                <a
+                  href="https://www.mediafire.com/file/ci4t260wvgy1e9w/am-form-to-custom-table.zip/file"
+                  target="_blank"
+                  class="btn btn-warning"
+                  >Download</a
+                >
+                <h6 class="d-block my-2">Download Count: 16</h6>
+              </div>
+            </div>
           </div>
 
-          <div id="amrp" class="col">
-            <a
-              href="https://www.mediafire.com/file/6m3pipnvu5aua3h/am-rate-posts.zip/file"
-              target="_blank"
-            >
+          <div id="amrp" class="col my-3 my-md-0">
+            <div class="card">
               <img src="./images/WordPress-logo.png" alt="WordPress Plugin" />
-            </a>
-            <figcaption class="my-3 text-center">
-              WordPress Plugin: Adds rating to posts
-            </figcaption>
-          </div>
-        </div>
 
-        <hr />
-
-        <h2 id="themes" class="rounded-pill p-3">Themes</h2>
-        <div class="gallery p-3 row">
-          <div class="col">
-            <img
-              srcset="
-                images/career-desktop.jpg 1339w,
-                images/career-mobile.jpg   664w
-              "
-              sizes="(min-width: 1200px) 100vw, 50vw"
-              src="images/career-mobile.jpg"
-              alt="Career Views Theme"
-              class="mh-100"
-            />
-            <figcaption class="my-3 text-center">WordPress theme</figcaption>
+              <div class="card-body">
+                <h5 class="card-title">WordPress Plugin</h5>
+                <ul class="card-text">
+                  <li>
+                    It constructs a rating system for the site posts using a
+                    custom database table
+                  </li>
+                  <li>
+                    I developed it using
+                    <b>SCSS, PHP, WordPress functions & SQL</b>
+                  </li>
+                </ul>
+                <a
+                  href="https://www.mediafire.com/file/6m3pipnvu5aua3h/am-rate-posts.zip/file"
+                  target="_blank"
+                  class="btn btn-warning"
+                  >Download</a
+                >
+                <h6 class="d-block my-2">Download Count: 16</h6>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -121,40 +141,66 @@
 
         <h2 class="rounded-pill p-3">Front End</h2>
 
-        <div class="gallery p-3 row">
-          <div class="col">
-            <a href="https://sharp-snyder-1d6d85.netlify.app/" target="_blank">
-              <img
-                srcset="
-                  images/animated-desktop.png 1339w,
-                  images/animated-mobile.png   664w
-                "
-                sizes="(min-width: 1200px) 100vw, 50vw"
-                src="images/animated-mobile.png"
-                alt="animated work"
-              />
-            </a>
-            <figcaption class="my-3 text-center">Vanilla JS</figcaption>
+        <div class="gallery p-3 row justify-content-center">
+          <div class="col my-3 my-md-0">
+            <div class="card">
+              <a
+                href="https://sharp-snyder-1d6d85.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  srcset="
+                    images/animated-desktop.png 1339w,
+                    images/animated-mobile.png   664w
+                  "
+                  sizes="(min-width: 1200px) 100vw, 50vw"
+                  src="images/animated-mobile.png"
+                  alt="animated work"
+                  class="mh-100 card-img-top"
+                />
+              </a>
+              <div class="card-body">
+                <ul class="card-text">
+                  <li>A practice challenge from frontend-mentor</li>
+                  <li>
+                    I developed it using
+                    <b>SCSS, Bootstrap, TypeScript & AOS</b>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="col">
-            <a
-              href="https://frontend-mentor-invoices.herokuapp.com/"
-              target="_blank"
-            >
-              <img
-                srcset="
-                  images/invoices-desktop.jpg 900w,
-                  images/invoices-mobile.jpg  896w
-                "
-                sizes="(min-width: 1200px) 100vw, 50vw"
-                src="images/invoices-mobile.JPG"
-                alt="invoices app"
-              />
-            </a>
-            <figcaption class="my-3 text-center">
-              React-Redux / Framer-Motion
-            </figcaption>
+          <div class="col my-3 my-md-0">
+            <div class="card">
+              <a
+                href="https://frontend-mentor-invoices.herokuapp.com/"
+                target="_blank"
+              >
+                <img
+                  srcset="
+                    images/invoices-desktop.jpg 900w,
+                    images/invoices-mobile.jpg  896w
+                  "
+                  sizes="(min-width: 1200px) 100vw, 50vw"
+                  src="images/invoices-mobile.JPG"
+                  alt="invoices app"
+                  class="mh-100 card-img-top"
+                />
+              </a>
+              <div class="card-body">
+                <ul class="card-text">
+                  <li>A practice challenge from frontend-mentor</li>
+                  <li>
+                    I developed it using
+                    <b>
+                      SCSS, TypeScript, React, React-Redux, React-Bootstrap &
+                      Framer-Motion
+                    </b>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -164,29 +210,77 @@
 
         <h2 class="rounded-pill p-3">Full-Stack</h2>
 
-        <div class="gallery p-3 row">
-          <div class="col">
-            <a href="https://hotel--booking.herokuapp.com/" target="_blank">
+        <div class="gallery p-3 row justify-content-center">
+          <div class="col my-3 my-md-0">
+            <div class="card">
               <img
                 srcset="
-                  images/hotel-desktop.JPG 1289w,
-                  images/hotel-mobile.JPG   607w
+                  images/career-desktop.jpg 1339w,
+                  images/career-mobile.jpg   664w
                 "
                 sizes="(min-width: 1200px) 100vw, 50vw"
-                src="images/hotel-mobile.JPG"
-                alt="booking app"
+                src="images/career-mobile.jpg"
+                alt="Career Views Theme"
+                class="mh-100 card-img-top"
               />
-            </a>
-            <figcaption class="my-3 text-center">
-              React-Redux / Dotnet Core
-            </figcaption>
+              <div class="card-body">
+                <ul class="card-text">
+                  <li>
+                    A WordPress site for career seniors and juniors to exchange
+                    experience by sharing reviews
+                  </li>
+                  <li>
+                    I designed it using captures from other templates and
+                    developed it using
+                    <b>SCSS, Bootstrap, WordPress built-in functions & SQL</b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col my-3 my-md-0">
+            <div class="card">
+              <a href="https://hotel--booking.herokuapp.com/" target="_blank">
+                <img
+                  srcset="
+                    images/hotel-desktop.JPG 1289w,
+                    images/hotel-mobile.JPG   607w
+                  "
+                  sizes="(min-width: 1200px) 100vw, 50vw"
+                  src="images/hotel-mobile.JPG"
+                  alt="booking app"
+                  class="mh-100 card-img-top"
+                />
+              </a>
+              <div class="card-body">
+                <ul class="card-text">
+                  <li>
+                    A practice project for a hotel reservation system where a
+                    user can view the available rooms and make reservations.
+                  </li>
+                  <li>
+                    He also rceives emails upon making/cancelling a reservaion
+                    or subscribing to the hotel newsletter
+                  </li>
+                  <li>
+                    I made the design with some design captures from other
+                    templates and developed it using
+                    <b>
+                      SCSS, TypeScript, React , React-Redux, React-Bootstrap
+                      ASP.Net Core, NETCore.MailKit & Entity Framework
+                    </b>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         <div id="review" class="text-center rounded p-3">
           <svg
-            stroke="currentColor"
-            fill="currentColor"
+            stroke="current col my-3 my-md-0or"
+            fill="current col my-3 my-md-0or"
             stroke-width="0"
             viewBox="0 0 24 24"
             height="1em"
@@ -209,58 +303,121 @@
       </section>
 
       <section id="skills">
-        <h1 class="mb-4">Tools</h1>
-        <div class="d-flex overflow-scroll">
-          <img src="images/html.svg" alt="HTML" />
-          <img src="images/css.svg" alt="CSS" />
-          <img src="images/sass.svg" alt="Sass" />
-          <img src="images/Bootstrap.png" alt="Bootstrap" />
-          <img src="images/javascript.svg" alt="JavaScript" />
-          <img src="images/typescript.svg" alt="TypeScript" />
-          <img src="images/react.svg" alt="React" />
-          <img src="images/redux.svg" alt="Redux" />
-          <img src="images/dotnet-core.svg" alt="Asp.NET Core" />
-          <img src="images/db.svg" alt="Database" />
-          <img src="images/wordpress.svg" alt="WordPress" />
-          <img src="images/git.svg" alt="GIT" />
-          <img src="images/docker.svg" alt="Docker" />
+        <h1 class="mb-4">Skills</h1>
+        <div class="row w-100 px-3">
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/html.svg" alt="HTML" class="d-block" />
+            <div>HTML</div>
+            <div class="exp-years">Proficient (~1.5 years)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/css.svg" alt="CSS" class="d-block" />
+            <div>CSS</div>
+            <div class="exp-years">Proficient (~1.5 years)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img img src="images/sass.svg" alt="Sass" class="d-block" />
+            <div>SCSS</div>
+            <div class="exp-years">Novice (~9 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/Bootstrap.png" alt="Bootstrap" class="d-block" />
+            <div>Bootstrap</div>
+            <div class="exp-years">Proficient (~9 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/javascript.svg" alt="JavaScript" class="d-block" />
+            <div>JavaScript</div>
+            <div class="exp-years">Proficient (~9 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/typescript.svg" alt="TypeScript" class="d-block" />
+            <div>TypeScript</div>
+            <div class="exp-years">Novice (~5 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/react.svg" alt="React" />
+            <div>React</div>
+            <div class="exp-years">Proficient (~6 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/redux.svg" alt="React-Redux" class="d-block" />
+            <div>React-Redux</div>
+            <div class="exp-years">Novice (~2 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img
+              src="images/dotnet-core.svg"
+              alt="Asp.NET Core"
+              class="d-block"
+            />
+            <div>ASP.Net Core</div>
+            <div class="exp-years">Novice (~3 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/wordpress.svg" alt="WordPress" class="d-block" />
+            <div>WordPress</div>
+            <div class="exp-years">Novice (~3 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/git.svg" alt="git" class="d-block" />
+            <div>git</div>
+            <div class="exp-years">Novice (~9 projects)</div>
+          </div>
+          <div class="col my-3 d-flex align-items-center">
+            <img src="images/docker.svg" alt="Docker" class="d-block" />
+            <div>Docker</div>
+            <div class="exp-years">Novice (~2 projects)</div>
+          </div>
         </div>
       </section>
 
-      <footer class="overflow-scroll p-4 d-flex justify-content-center">
-        <a
-          href="https://www.linkedin.com/in/amirlatif92/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img src="images/linkedin.svg" alt="LinkedIn"
-        /></a>
-        <a
-          href="https://www.fiverr.com/amirlatif92"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img src="images/fiverr.svg" alt="Fiverr"
-        /></a>
-        <a
-          href="https://khamsat.com/user/amir_latif"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img src="images/Khamsat.png" alt="khamsat"
-        /></a>
-        <a
-          href="https://mostaql.com/u/Amir_Latif/portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img src="images/mustaql.png" alt="Mustaql"
-        /></a>
-        <a
-          href="https://github.com/Amir-Latif"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img src="images/github.svg" alt="GitHub"
-        /></a>
-        <a href="mailto:amir.j.latif@outlook.com"
-          ><img src="images/mail.svg" alt="Email"
-        /></a>
+      <footer class="row w-100 p-4 justify-content-center">
+        <div class="col my-3">
+          <a
+            href="https://www.linkedin.com/in/amirlatif92/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+        <div class="col my-3">
+          <a
+            href="https://www.fiverr.com/amirlatif92"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/fiverr.svg" alt="Fiverr"
+          /></a>
+        </div>
+        <div class="col my-3">
+          <a
+            href="https://khamsat.com/user/amir_latif"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/Khamsat.png" alt="khamsat"
+          /></a>
+        </div>
+        <div class="col my-3">
+          <a
+            href="https://mostaql.com/u/Amir_Latif/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/mustaql.png" alt="Mustaql"
+          /></a>
+        </div>
+        <div class="col my-3">
+          <a
+            href="https://github.com/Amir-Latif"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/github.svg" alt="GitHub"
+          /></a>
+        </div>
+        <div class="col my-3">
+          <a href="mailto:amir.j.latif@outlook.com"
+            ><img src="images/mail.svg" alt="Email"
+          /></a>
+        </div>
       </footer>
     </main>
   </body>
