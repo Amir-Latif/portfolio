@@ -1,166 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#002c3e">
-    <link rel="manifest" href="portfolio.webmanifest">
-    <link rel="shortcut icon" href="images/favicon.png">
+  <head>
+    <!-- Google Tag Manager -->
+    <script src="scripts/googleTagManager.js"></script>
+    <!-- End of Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#002c3e" />
+    <link rel="manifest" href="portfolio.webmanifest" />
+    <link rel="shortcut icon" href="images/favicon.png" />
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <title>Amir Latif</title>
-</head>
+  </head>
 
-<body>
-    <noscript>
-        You need to enable JavaScript to run this app.
-    </noscript>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WHLLXHP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <main class="container">
+      <!-- The Sign-in button. This will run `queryReports()` on success. -->
+      <p class="g-signin2" data-onsuccess="queryReports"></p>
 
-        <section id="about" class="container m-auto d-xl-flex align-items-xl-baseline">
-            <div class="text-center">
-                <img srcset="images/amir-latif-desktop.png 1339w, images/amir-latif-mobile.png 284w"
-                    sizes="(min-width: 1200px) 70vw, 50vw" src="images/amir-latif-mobile.png" alt="Amir Latif Pic"
-                    class="mb-3">
-            </div>
-            <div class="text-center">
-                <h1 class="fst-italic">Amir Latif</h1>
-                <h2>Junior Full-Stack Web Developer</h2>
-                <p class="m-1"> My passion is high to help others develop their skills, lives and achieve their
-                    goals.<br>
-                    I love programming, creative designs, sports and languages </p>
-            </div>
-        </section>
+      <!-- The API response will be printed here. -->
+      <textarea cols="80" rows="20" id="query-output"></textarea>
+      <section
+        id="about"
+        class="container m-auto d-xl-flex align-items-xl-baseline"
+      >
+        <div class="text-center">
+          <img
+            srcset="
+              images/amir-latif-desktop.png 1339w,
+              images/amir-latif-mobile.png   284w
+            "
+            sizes="(min-width: 1200px) 70vw, 50vw"
+            src="images/amir-latif-mobile.png"
+            alt="Amir Latif Pic"
+            class="mb-3"
+          />
+        </div>
+        <div class="text-center">
+          <h1 class="fst-italic">Amir Latif</h1>
+          <h2>Junior Full-Stack Web Developer</h2>
+          <p class="m-1">
+            My passion is high to help others develop their skills, lives and
+            achieve their goals.<br />
+            I love programming, creative designs, sports and languages
+          </p>
+        </div>
+      </section>
 
-        <section id="works" class="p-4">
-            <h1>
-                My Works
-            </h1>
-            <hr>
+      <section id="works" class="p-4">
+        <h1>My Works</h1>
+        <hr />
 
-            <h2 id="scripts" class="rounded-pill p-3">Scripts</h2>
+        <h2 id="scripts" class="rounded-pill p-3">Scripts</h2>
 
-            <div class="gallery p-3 row">
-                <div id="amfut" class="col">
-                    <a href="https://www.mediafire.com/file/ci4t260wvgy1e9w/am-form-to-custom-table.zip/file"
-                        target="_blank">
-                        <img src="./images/WordPress-logo.png" alt="WordPress Plugin">
-                    </a>
-                    <figcaption class="my-3 text-center">WordPress Plugin: Gets user input to custom table</figcaption>
-                </div>
+        <div class="gallery p-3 row">
+          <div id="amfut" class="col">
+            <a
+              href="https://www.mediafire.com/file/ci4t260wvgy1e9w/am-form-to-custom-table.zip/file"
+              target="_blank"
+            >
+              <img src="./images/WordPress-logo.png" alt="WordPress Plugin" />
+            </a>
+            <figcaption class="my-3 text-center">
+              WordPress Plugin: Gets user input to custom table
+            </figcaption>
+          </div>
 
-                <div id="amrp" class="col">
-                    <a href="https://www.mediafire.com/file/6m3pipnvu5aua3h/am-rate-posts.zip/file" target="_blank">
-                        <img src="./images/WordPress-logo.png" alt="WordPress Plugin">
-                    </a>
-                    <figcaption class="my-3 text-center">WordPress Plugin: Adds rating to posts</figcaption>
-                </div>
-            </div>
+          <div id="amrp" class="col">
+            <a
+              href="https://www.mediafire.com/file/6m3pipnvu5aua3h/am-rate-posts.zip/file"
+              target="_blank"
+            >
+              <img src="./images/WordPress-logo.png" alt="WordPress Plugin" />
+            </a>
+            <figcaption class="my-3 text-center">
+              WordPress Plugin: Adds rating to posts
+            </figcaption>
+          </div>
+        </div>
 
-            <hr>
+        <hr />
 
-            <h2 id="themes" class="rounded-pill p-3">Themes</h2>
-            <div class="gallery p-3 row">
-                <div class="col">
-                    <img srcset="images/career-desktop.jpg 1339w, images/career-mobile.jpg 664w"
-                        sizes="(min-width: 1200px) 100vw, 50vw" src="images/career-mobile.jpg" alt="Career Views Theme"
-                        class="mh-100">
-                    <figcaption class="my-3 text-center">WordPress theme</figcaption>
-                </div>
-            </div>
+        <h2 id="themes" class="rounded-pill p-3">Themes</h2>
+        <div class="gallery p-3 row">
+          <div class="col">
+            <img
+              srcset="
+                images/career-desktop.jpg 1339w,
+                images/career-mobile.jpg   664w
+              "
+              sizes="(min-width: 1200px) 100vw, 50vw"
+              src="images/career-mobile.jpg"
+              alt="Career Views Theme"
+              class="mh-100"
+            />
+            <figcaption class="my-3 text-center">WordPress theme</figcaption>
+          </div>
+        </div>
 
-            <hr>
+        <hr />
 
-            <!-- Front End -->
+        <!-- Front End -->
 
-            <h2 class="rounded-pill p-3">Front End</h2>
+        <h2 class="rounded-pill p-3">Front End</h2>
 
-            <div class="gallery p-3 row">
-                <div class="col">
-                    <a href="https://sharp-snyder-1d6d85.netlify.app/" target="_blank">
-                        <img srcset="images/animated-desktop.png 1339w, images/animated-mobile.png 664w"
-                            sizes="(min-width: 1200px) 100vw, 50vw" src="images/animated-mobile.png"
-                            alt="animated work">
-                    </a>
-                    <figcaption class="my-3 text-center">Vanilla JS</figcaption>
-                </div>
+        <div class="gallery p-3 row">
+          <div class="col">
+            <a href="https://sharp-snyder-1d6d85.netlify.app/" target="_blank">
+              <img
+                srcset="
+                  images/animated-desktop.png 1339w,
+                  images/animated-mobile.png   664w
+                "
+                sizes="(min-width: 1200px) 100vw, 50vw"
+                src="images/animated-mobile.png"
+                alt="animated work"
+              />
+            </a>
+            <figcaption class="my-3 text-center">Vanilla JS</figcaption>
+          </div>
 
-                <div class="col">
-                    <a href="https://frontend-mentor-invoices.herokuapp.com/" target="_blank">
-                        <img srcset="images/invoices-desktop.jpg 900w, images/invoices-mobile.jpg 896w"
-                            sizes="(min-width: 1200px) 100vw, 50vw" src="images/invoices-mobile.JPG" alt="invoices app">
-                    </a>
-                    <figcaption class="my-3 text-center">React-Redux / Framer-Motion</figcaption>
-                </div>
-            </div>
+          <div class="col">
+            <a
+              href="https://frontend-mentor-invoices.herokuapp.com/"
+              target="_blank"
+            >
+              <img
+                srcset="
+                  images/invoices-desktop.jpg 900w,
+                  images/invoices-mobile.jpg  896w
+                "
+                sizes="(min-width: 1200px) 100vw, 50vw"
+                src="images/invoices-mobile.JPG"
+                alt="invoices app"
+              />
+            </a>
+            <figcaption class="my-3 text-center">
+              React-Redux / Framer-Motion
+            </figcaption>
+          </div>
+        </div>
 
-            <hr>
+        <hr />
 
-            <!-- Full Stack -->
+        <!-- Full Stack -->
 
-            <h2 class="rounded-pill p-3">Full-Stack</h2>
+        <h2 class="rounded-pill p-3">Full-Stack</h2>
 
-            <div class="gallery p-3 row">
-                <div class="col">
-                    <a href="https://hotel--booking.herokuapp.com/" target="_blank">
-                        <img srcset="images/hotel-desktop.JPG 1289w, images/hotel-mobile.JPG 607w"
-                            sizes="(min-width: 1200px) 100vw, 50vw" src="images/hotel-mobile.JPG" alt="booking app">
-                    </a>
-                    <figcaption class="my-3 text-center">React-Redux / Dotnet Core</figcaption>
-                </div>
-            </div>
+        <div class="gallery p-3 row">
+          <div class="col">
+            <a href="https://hotel--booking.herokuapp.com/" target="_blank">
+              <img
+                srcset="
+                  images/hotel-desktop.JPG 1289w,
+                  images/hotel-mobile.JPG   607w
+                "
+                sizes="(min-width: 1200px) 100vw, 50vw"
+                src="images/hotel-mobile.JPG"
+                alt="booking app"
+              />
+            </a>
+            <figcaption class="my-3 text-center">
+              React-Redux / Dotnet Core
+            </figcaption>
+          </div>
+        </div>
 
+        <div id="review" class="text-center rounded p-3">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z"
+            ></path>
+          </svg>
+          You are welcome to leave your review regarding any of my works
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe1OXblN4YLhm2Gjl3-n731lVKW6oJVvfdMd9o3wl2474rN8g/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #f7444e"
+            >here</a
+          >
+        </div>
+      </section>
 
-            <div id="review" class="text-center rounded p-3"><svg stroke="currentColor" fill="currentColor"
-                    stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z">
-                    </path>
-                </svg>
-                You are welcome to leave your review regarding any of my works <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSe1OXblN4YLhm2Gjl3-n731lVKW6oJVvfdMd9o3wl2474rN8g/viewform"
-                    target="_blank" rel="noopener noreferrer" style="color: #f7444e">here</a></div>
-        </section>
+      <section id="skills">
+        <h1 class="mb-4">Tools</h1>
+        <div class="d-flex overflow-scroll">
+          <img src="images/html.svg" alt="HTML" />
+          <img src="images/css.svg" alt="CSS" />
+          <img src="images/sass.svg" alt="Sass" />
+          <img src="images/Bootstrap.png" alt="Bootstrap" />
+          <img src="images/javascript.svg" alt="JavaScript" />
+          <img src="images/typescript.svg" alt="TypeScript" />
+          <img src="images/react.svg" alt="React" />
+          <img src="images/redux.svg" alt="Redux" />
+          <img src="images/dotnet-core.svg" alt="Asp.NET Core" />
+          <img src="images/db.svg" alt="Database" />
+          <img src="images/wordpress.svg" alt="WordPress" />
+          <img src="images/git.svg" alt="GIT" />
+          <img src="images/docker.svg" alt="Docker" />
+        </div>
+      </section>
 
-        <section id="skills">
-            <h1 class="mb-4">Tools</h1>
-            <div class="d-flex overflow-scroll">
-                <img src="images/html.svg" alt="HTML">
-                <img src="images/css.svg" alt="CSS">
-                <img src="images/sass.svg" alt="Sass">
-                <img src="images/Bootstrap.png" alt="Bootstrap">
-                <img src="images/javascript.svg" alt="JavaScript">
-                <img src="images/typescript.svg" alt="TypeScript">
-                <img src="images/react.svg" alt="React">
-                <img src="images/redux.svg" alt="Redux">
-                <img src="images/dotnet-core.svg" alt="Asp.NET Core">
-                <img src="images/db.svg" alt="Database">
-                <img src="images/wordpress.svg" alt="WordPress">
-                <img src="images/git.svg" alt="GIT">
-                <img src="images/docker.svg" alt="Docker">
-            </div>
-        </section>
-
-        <footer class="overflow-scroll p-4 d-flex justify-content-center">
-            <a href="https://www.linkedin.com/in/amirlatif92/" target="_blank" rel="noopener noreferrer"><img
-                    src="images/linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://www.fiverr.com/amirlatif92" target="_blank" rel="noopener noreferrer"><img
-                    src="images/fiverr.svg" alt="Fiverr"></a>
-            <a href="https://khamsat.com/user/amir_latif" target="_blank" rel="noopener noreferrer"><img
-                    src="images/Khamsat.png" alt="khamsat"></a>
-            <a href="https://mostaql.com/u/Amir_Latif/portfolio" target="_blank" rel="noopener noreferrer"><img
-                    src="images/mustaql.png" alt="Mustaql"></a>
-            <a href="https://github.com/Amir-Latif" target="_blank" rel="noopener noreferrer"><img
-                    src="images/github.svg" alt="GitHub"></a>
-            <a href="mailto:amir.j.latif@outlook.com"><img src="images/mail.svg" alt="Email"></a>
-        </footer>
-
+      <footer class="overflow-scroll p-4 d-flex justify-content-center">
+        <a
+          href="https://www.linkedin.com/in/amirlatif92/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a
+          href="https://www.fiverr.com/amirlatif92"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/fiverr.svg" alt="Fiverr"
+        /></a>
+        <a
+          href="https://khamsat.com/user/amir_latif"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/Khamsat.png" alt="khamsat"
+        /></a>
+        <a
+          href="https://mostaql.com/u/Amir_Latif/portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/mustaql.png" alt="Mustaql"
+        /></a>
+        <a
+          href="https://github.com/Amir-Latif"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/github.svg" alt="GitHub"
+        /></a>
+        <a href="mailto:amir.j.latif@outlook.com"
+          ><img src="images/mail.svg" alt="Email"
+        /></a>
+      </footer>
     </main>
-
-</body>
-
+  </body>
 </html>
