@@ -21,9 +21,10 @@ h1 {
 }
 
 main.container {
-  padding: 0 !important;
+  padding: 1em 0 !important;
 
   @media only screen and (min-width: 1200px) {
+    padding: 0 !important;
     max-width: 100% !important;
   }
 }
@@ -57,12 +58,13 @@ main.container {
   margin: 2rem 0;
 
   .col {
-    min-width: 250px;
+    min-width: 370px;
+    max-width: 370px;
   }
 
   .project-categories {
     background-color: #fff;
-    color: $color2;
+    color: #7b2227;
     width: max-content;
   }
 
@@ -119,9 +121,5 @@ footer {
 
   .col {
     max-width: 120px;
-  }
-
-  img {
-    height: 5rem;
   }
 }
