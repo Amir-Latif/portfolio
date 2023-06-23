@@ -80,6 +80,9 @@ main.container {
   background-size: 90% 2px;
   background-position: bottom;
 }
+#skills p {
+  margin-bottom: initial;
+}
 #skills img {
   margin: 0 1rem;
   width: 3rem;

@@ -103,6 +103,10 @@ main.container {
     background-position: bottom;
   }
 
+  p {
+    margin-bottom: initial;
+  }
+
   img {
     margin: 0 1rem;
     width: 3rem;
